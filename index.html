@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>My messenger</title>
+      <script src='app.js' defer></script>
+      <link rel='stylesheet' href='styles.css'>
+     
+
+   </head>
+	
+   
+         <body>
+           
+           <section class=wrapper>
+
+                <div class=leftFrame id="left">
+                    <input type="text" class="newChatInput" id="inputLeft" onchange="startNewChat()" placeholder="New name"></input>
+                    <button class="chatButton">Enter</button>
+                </div>
+                
+
+                <div class=rightFrame>
+
+                    <div class=rightTop id="newMessage">
+                    </div>
+
+                    <div class=rightBottom>
+                        <input type="text" class="newChatInput" id="inputRight" onchange="startConversation()" placeholder="Write a message..."></input>
+                        <button class="chatButton" onclick="startConversation()">Enter</button>
+                    </div>
+
+                </div>
+
+        
+        
+        
+            </section>
+
+                
+
+        
+        
+        
+            
+             
+
+
+         </body>
+     
+
+      
+
+   
+</html>
