@@ -1,5 +1,5 @@
 
-*{padding: 0; margin: 0; box-sizing: border-box;}
+html {padding: 0; margin: 0; box-sizing: border-box; overflow: hidden; height: 100%;}
 
 .wrapper {position: absolute;
             left: 0;
@@ -19,19 +19,22 @@
             justify-items: center;
             align-items: center;}
 
+#left {overflow-y: auto;}
+
 
 .rightTop {background-image: linear-gradient(rgba(211, 246, 255, 0),rgba(0, 132, 255, 0.25));
             padding: 10px;
+            min-height: 90%;
+            grid-column: 2/3;
+            grid-row: 1/2;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            justify-content: flex-end;
-            grid-column: 2/2;
-            grid-row: 1/2;}
+            overflow-y: auto;}
+.rightTop > :first-child { margin-top: auto }
 
 
 .rightBottom {background-image: linear-gradient(rgba(211, 246, 255, 0),rgba(0, 132, 255, 0.25));
-            grid-column: 2/2;
+            grid-column: 2/3;
             grid-column: 2/3;}
 
 .newChatInput { width: 90%;
@@ -108,7 +111,7 @@
     
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            
             align-items: flex-end;
             }
 
@@ -123,3 +126,7 @@
     border-radius: 10px;
     box-shadow:0 0 15px 4px rgba(0, 0, 0, 0.103);
     background-color:  rgb(240, 245, 255)}
+
+
+
+/*.columnReverse {}
