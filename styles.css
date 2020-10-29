@@ -121,6 +121,7 @@ html {
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.24);
   border-radius: 10px;
   transition: 0.3s box-shadow;
+  cursor: pointer;
 }
 
 .chatButton:hover {
@@ -146,6 +147,7 @@ html {
   border-radius: 10px;
   transition: 0.5s box-shadow;
   transition: 0.5s background-color;
+  cursor: pointer;
 }
 
 .chatMenu:hover {
@@ -176,4 +178,29 @@ html {
   border-radius: 10px;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.103);
   background-color: rgb(240, 245, 255);
+  cursor: pointer;
+}
+
+.custom_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 0px;
+  background: white;
+  border: rgb(207, 207, 207) 1px solid;
+  display: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.24);
+}
+
+.cm_item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+.cm_item:hover {
+  background-color: rgb(207, 207, 207);
+  transition: all 0.5s ease-out;
 }
